@@ -1,0 +1,10 @@
+s1,s2,s3,s4,s5=float(input('Enter the marks of your five subject:\n')),float(input()),float(input()),float(input()),float(input())
+print('Your total number is:',s1+s2+s3+s4+s5)
+avg=(s1+s2+s3+s4+s5)/5
+print('Your average number is:',avg)
+if avg>=90 and avg<=100: print('Your grade is: AA')
+elif avg>=80 and avg<=89: print('Your  grade is: A+')
+elif avg>=60 and avg<=79: print('Your  grade is: A')
+elif avg>=40 and avg<=59: print('Your  grade is: B')
+elif avg>=30 and avg<=39: print('Your  grade is: C')
+else: print("You are FAIL")

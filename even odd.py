@@ -1,0 +1,1 @@
+print('The number is Even')  if (float(input('Enter a value:\n')))%2==0 else print('The number is odd') 

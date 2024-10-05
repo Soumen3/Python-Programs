@@ -1,0 +1,28 @@
+turtl is a library function or is a library which primaryly design to introduce children to the real world programming. 
+the minimum requiment to sratt a turtle programm are- 
+python environment:
+                it is basically the working area of python environment. we can use for python environment idle or jupiter notebook.
+python version:
+                we must have python 3 or upper version on your system.
+required package:
+                to stsrt turtle program we must import 'turtle' before start program 
+
+
+how to create turtle screen:
+        s=turtle.getscreen()
+
+to stop the display:
+        turte.mainloop()
+
+forward turtle:
+        import turtle
+        s=turtle.getscreen()
+        s.forward(100)
+        turtle.mainloop()
+
+
+
+how to set position:
+                turtle.setX(only x co-ordinate)             -     here y is unchanged,
+                turtle.setY(only y co-ordinate)             -     here x is unchanged
+                

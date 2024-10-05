@@ -1,0 +1,190 @@
+Python 3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+
+=============== RESTART: D:\Python\projects\project- phonebook.py ==============
+Enter R for registration.
+Enter L for login.
+l
+			LOGIN
+Enter the phone no.	9382532340
+Enter the password:	Soumen@1234
+
+Login successful
+
+[view-a]     to view all save contacts
+[view]       to view a specific contact
+[add]        to a new contact
+[del]        to delete a contact
+[update]     to update an existing contact
+[exit]       to exit the program
+
+Enter your choose:	view-a
+YOUR CONTACTS ARE:
+╒══════════════╤══════════════╤═════════════╤════════════╤═══════════════════════════════╕
+│   Contact Id │ First Name   │ Last Name   │     Ph NO. │ Email                         │
+╞══════════════╪══════════════╪═════════════╪════════════╪═══════════════════════════════╡
+│         2340 │ Soumen       │ Samanta     │ 9382532340 │ soumensamanta112233@gmail.com │
+├──────────────┼──────────────┼─────────────┼────────────┼───────────────────────────────┤
+│         4532 │ Akash        │ Santra      │ 6295974532 │ akashsantra5748@gmail.com     │
+├──────────────┼──────────────┼─────────────┼────────────┼───────────────────────────────┤
+│         2261 │ Prayas       │ Chakraborty │ 8597572261 │ prayas2233@gmail.com          │
+╘══════════════╧══════════════╧═════════════╧════════════╧═══════════════════════════════╛
+[view-a]     to view all save contacts
+[view]       to view a specific contact
+[add]        to a new contact
+[del]        to delete a contact
+[update]     to update an existing contact
+[exit]       to exit the program
+
+Enter your choose:	view
+
+
+[id]         Search by Contact Id
+[ph]         Search by Phone number
+[mail]       Search by Email
+Enter your choose:	id
+Enter the id:	2340
+Here is your data:
+╒══════════════╤══════════════╤═════════════╤════════════╤═══════════════════════════════╕
+│   Contact Id │ First Name   │ Last Name   │     Ph NO. │ Email                         │
+╞══════════════╪══════════════╪═════════════╪════════════╪═══════════════════════════════╡
+│         2340 │ Soumen       │ Samanta     │ 9382532340 │ soumensamanta112233@gmail.com │
+╘══════════════╧══════════════╧═════════════╧════════════╧═══════════════════════════════╛
+[view-a]     to view all save contacts
+[view]       to view a specific contact
+[add]        to a new contact
+[del]        to delete a contact
+[update]     to update an existing contact
+[exit]       to exit the program
+
+Enter your choose:	add
+Enter the first name:	Sumit
+Enter the last name:	Dandapat
+Enter the phone numbe:	9685484555
+Enter the email:	Sumit@gmail.com
+
+Record inserted successfully
+
+[view-a]     to view all save contacts
+[view]       to view a specific contact
+[add]        to a new contact
+[del]        to delete a contact
+[update]     to update an existing contact
+[exit]       to exit the program
+
+Enter your choose:	view-a
+YOUR CONTACTS ARE:
+╒══════════════╤══════════════╤═════════════╤════════════╤═══════════════════════════════╕
+│   Contact Id │ First Name   │ Last Name   │     Ph NO. │ Email                         │
+╞══════════════╪══════════════╪═════════════╪════════════╪═══════════════════════════════╡
+│         2340 │ Soumen       │ Samanta     │ 9382532340 │ soumensamanta112233@gmail.com │
+├──────────────┼──────────────┼─────────────┼────────────┼───────────────────────────────┤
+│         4532 │ Akash        │ Santra      │ 6295974532 │ akashsantra5748@gmail.com     │
+├──────────────┼──────────────┼─────────────┼────────────┼───────────────────────────────┤
+│         2261 │ Prayas       │ Chakraborty │ 8597572261 │ prayas2233@gmail.com          │
+├──────────────┼──────────────┼─────────────┼────────────┼───────────────────────────────┤
+│         4555 │ Sumit        │ Dandapat    │ 9685484555 │ Sumit@gmail.com               │
+╘══════════════╧══════════════╧═════════════╧════════════╧═══════════════════════════════╛
+[view-a]     to view all save contacts
+[view]       to view a specific contact
+[add]        to a new contact
+[del]        to delete a contact
+[update]     to update an existing contact
+[exit]       to exit the program
+
+Enter your choose:	del
+SELECT RECORD:
+
+[id]       Select data using id
+[fname]      Select data using First name
+[lname]      Select data using Last name
+[ph]         Select data using Phone Number
+[mail]       Select data using Email
+
+Enter your choice	id
+
+Enter the contact_id4555
+╒══════════════╤══════════════╤═════════════╤════════════╤═════════════════╕
+│   Contact Id │ First Name   │ Last Name   │     Ph NO. │ Email           │
+╞══════════════╪══════════════╪═════════════╪════════════╪═════════════════╡
+│         4555 │ Sumit        │ Dandapat    │ 9685484555 │ Sumit@gmail.com │
+╘══════════════╧══════════════╧═════════════╧════════════╧═════════════════╛
+
+Record deleted
+
+[view-a]     to view all save contacts
+[view]       to view a specific contact
+[add]        to a new contact
+[del]        to delete a contact
+[update]     to update an existing contact
+[exit]       to exit the program
+
+Enter your choose:	view-a
+YOUR CONTACTS ARE:
+╒══════════════╤══════════════╤═════════════╤════════════╤═══════════════════════════════╕
+│   Contact Id │ First Name   │ Last Name   │     Ph NO. │ Email                         │
+╞══════════════╪══════════════╪═════════════╪════════════╪═══════════════════════════════╡
+│         2340 │ Soumen       │ Samanta     │ 9382532340 │ soumensamanta112233@gmail.com │
+├──────────────┼──────────────┼─────────────┼────────────┼───────────────────────────────┤
+│         4532 │ Akash        │ Santra      │ 6295974532 │ akashsantra5748@gmail.com     │
+├──────────────┼──────────────┼─────────────┼────────────┼───────────────────────────────┤
+│         2261 │ Prayas       │ Chakraborty │ 8597572261 │ prayas2233@gmail.com          │
+╘══════════════╧══════════════╧═════════════╧════════════╧═══════════════════════════════╛
+[view-a]     to view all save contacts
+[view]       to view a specific contact
+[add]        to a new contact
+[del]        to delete a contact
+[update]     to update an existing contact
+[exit]       to exit the program
+
+Enter your choose:	update
+UPDATE RECORD:
+
+[id]       Update id
+[fname]      Update First name
+[lname]      Update Last name
+[ph]         Update Phone Number
+[mail]       Update Email
+
+Enter your choice	mail
+Enter the new data:	prayaschakraborty123@gmail.com
+SELECT RECORD:
+
+[id]       Select data using id
+[fname]      Select data using First name
+[lname]      Select data using Last name
+[ph]         Select data using Phone Number
+[mail]       Select data using Email
+
+Enter your choice	id
+
+Enter the contact_id	2261
+
+Record updated
+
+[view-a]     to view all save contacts
+[view]       to view a specific contact
+[add]        to a new contact
+[del]        to delete a contact
+[update]     to update an existing contact
+[exit]       to exit the program
+
+Enter your choose:	view-a
+YOUR CONTACTS ARE:
+╒══════════════╤══════════════╤═════════════╤════════════╤════════════════════════════════╕
+│   Contact Id │ First Name   │ Last Name   │     Ph NO. │ Email                          │
+╞══════════════╪══════════════╪═════════════╪════════════╪════════════════════════════════╡
+│         2340 │ Soumen       │ Samanta     │ 9382532340 │ soumensamanta112233@gmail.com  │
+├──────────────┼──────────────┼─────────────┼────────────┼────────────────────────────────┤
+│         4532 │ Akash        │ Santra      │ 6295974532 │ akashsantra5748@gmail.com      │
+├──────────────┼──────────────┼─────────────┼────────────┼────────────────────────────────┤
+│         2261 │ Prayas       │ Chakraborty │ 8597572261 │ prayaschakraborty123@gmail.com │
+╘══════════════╧══════════════╧═════════════╧════════════╧════════════════════════════════╛
+[view-a]     to view all save contacts
+[view]       to view a specific contact
+[add]        to a new contact
+[del]        to delete a contact
+[update]     to update an existing contact
+[exit]       to exit the program
+
+Enter your choose:	

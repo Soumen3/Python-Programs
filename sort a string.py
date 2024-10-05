@@ -1,0 +1,5 @@
+string=input('Enter a string:\t')
+string2=string.lower()
+print(string2)
+res=''.join(sorted(string2))
+print('The sorted string is:',str(res))
