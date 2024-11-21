@@ -594,9 +594,235 @@
 
 
 
-def power(val):
-	return val**2
 
-val=4
-print(power(val))
-print(val)
+
+
+# def power(val):
+# 	return val**2
+
+# val=4
+# print(power(val))
+# print(val)
+
+
+# lst = [10,-4,-30,60, 30, 88, 12, 76, -56]
+# lst.sort(reverse=True)
+# print(lst)
+
+
+# class Example:
+#     count = 0  # Class variable
+
+# # Create instances of the class
+# obj1 = Example()
+# obj2 = Example()
+
+# # Access the class variable
+# print(Example.count)  # Output: 0
+# print(obj1.count)     # Output: 0
+# print(obj2.count)     # Output: 0
+
+# # Modify the class variable
+# Example.count += 1
+
+# # Access the class variable again
+# print(Example.count)  # Output: 1
+# print(obj1.count)     # Output: 1
+# print(obj2.count)     # Output: 1
+
+# # Modify the class variable through an instance
+# obj1.count += 1
+
+# # Access the class variable again
+# print(Example.count)  # Output: 1
+# print(obj1.count)     # Output: 2
+# print(obj2.count)     # Output: 1
+
+
+
+
+
+
+# class Parent:
+#     def __init__(self, name):
+#         self.name = name
+
+#     def display(self):
+#         print(f"Parent Name: {self.name}")
+
+# class Child(Parent):
+#     def __init__(self, name, age):
+#         super().__init__(name)  # Call the __init__ method of the Parent class
+#         self.age = age
+
+#     def display(self):
+#         super().display()  # Call the display method of the Parent class
+#         print(f"Child Age: {self.age}")
+
+# # Create an instance of the Child class
+# child = Child("John", 12)
+
+# # Call the display method of the Child class
+# child.display()
+
+
+
+# def square(x):
+#     return x ** 2
+
+# numbers = [1, 2, 3, 4, 5]
+# squared_numbers = map(square, numbers)
+
+# # Convert the map object to a list to see the results
+# print(type(squared_numbers))
+# print(list(squared_numbers))
+
+
+
+
+
+
+# class Point:
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
+
+#     # overloading the '+' operator
+#     def __add__(self, other):
+#         x_sum = self.x + other.x
+#         y_sum = self.y + other.y
+#         return Point(x_sum, y_sum)
+    
+#     def __str__(self):
+#         return f"({self.x}, {self.y})"
+
+
+# p1 = Point(2, 3)
+# p2 = Point(4, 5)
+# print(p1)  # Output: (2, 3)
+# print(p1+p2)  # Output: (6, 8)
+
+
+
+
+
+
+
+
+
+
+# class Solution:
+#     steps=[1,2]
+
+
+#     def ways(self, n):
+#         if n<len(self.steps):
+#             return self.steps[n-1]
+        
+#         self.steps.append(self.ways(n-1)+self.ways(n-2))
+#         return self.steps[n-1]
+
+#     def climbStairs(self, n: int) -> int:
+#         return self.ways(n)
+
+
+
+
+
+
+
+# lst=[2]
+# def name(n):
+#     if n<=0:
+#         return
+#     print("Soumen Samanta",lst)
+#     name(n-1)
+
+# name(5)
+
+
+
+
+
+
+# def Solution(string):
+#     # Write your code here
+#     char={}
+#     length=0
+#     temp=0
+#     for i in range(len(string)):
+#       if string[i] not in char:
+#         char[string[i]]=True
+#         temp+=1
+#       else:
+#         char.clear()
+#         if length<temp:
+#           length = temp
+#         temp=0
+#     return length
+        
+# print(Solution('abcabcbb'))
+
+
+
+
+
+
+# def fiboGenerator(num):
+#     first=0
+#     second=1
+#     while num:
+#         yield first
+#         first, second = second, first+second
+#         num-=1
+#     return
+
+# print(fiboGenerator(10))
+
+
+
+
+
+# class Test:
+#     def __init__(self):
+#         self.a=5
+    
+#     def f1(self):
+#         self.b=10
+
+# t1=Test()
+# t2=Test()
+# t1.f1()
+# t1.c=15
+
+# print(t1.__dict__)
+# print(t2.__dict__)
+
+
+
+
+
+
+# add = lambda a,b: a+b
+# print(add(20,50))
+
+
+
+
+
+# factorial = lambda n: 1 if n==0 else n* factorial(n-1)
+# print(factorial(5))
+
+
+
+
+
+# expo=lambda a:a**a
+
+# lst=[expo(e) for e in range(1, 11)]
+# print(lst)
+
+
+# list1=[23,45,66,11,48,70,25,84,90,35]
+# lst=[e for e in list1 if e%2==0 ]
+# print(lst)
