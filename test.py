@@ -826,3 +826,57 @@
 # list1=[23,45,66,11,48,70,25,84,90,35]
 # lst=[e for e in list1 if e%2==0 ]
 # print(lst)
+
+
+
+
+
+
+# x=5
+# def f1():
+#     x=4
+#     d=globals()
+#     print(d['x'],x)
+# f1()
+# print(x)
+
+
+
+
+
+
+
+# def decor_result(result_function):
+#     def distinction(marks):
+#         for i in marks:
+#             if i>=75:
+#                 print("Distinction")
+#                 break
+#         result_function(marks)
+#     return distinction
+
+# @decor_result
+# def result(marks):
+#     for i in marks:
+#         if i >= 35:
+#             pass
+#         else:
+#             print('Fail')
+#             break
+#     else:
+#         print('Pass')
+
+# marks=[45,56,78,90,65,87]
+# result(marks)
+
+
+
+
+
+# def f1():
+#     print("First function")
+
+# def f1(a,b):
+#     print("Socond function")
+
+# f1()
