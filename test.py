@@ -880,3 +880,318 @@
 #     print("Socond function")
 
 # f1()
+
+
+
+
+
+# leetcode 5
+
+# def longestPalindrome(s):
+#     if len(s)<=1:
+#         return s
+    
+#     if len(s)==2:
+#         return s if s[0]==s[1] else s[0]
+
+#     n=len(s)
+#     record = [[0 for _ in range(n)] for _ in range(n)]
+
+#     i=0
+#     while i<n:
+#         record[i][i]=1
+#         i+=1
+#     long_str=s[0]
+
+#     i=0
+#     j=1
+#     while j<n:
+#         if s[i]==s[j]:
+#             record[i][j]=1
+#             long_str=s[i:j+1]
+#         i+=1
+#         j+=1
+    
+#     k=2
+#     while k<n:
+#         i=0
+#         j=i+k
+#         while j<n:
+#             if s[i]==s[j]:
+#                 if record[i+1][j-1]==1:
+#                     record[i][j]=1
+#                     long_str=s[i:j+1]
+#             j+=1
+#             i+=1
+#         k+=1
+    
+#     return long_str
+        
+
+# print(longestPalindrome('caba'))
+
+
+
+
+
+
+
+
+# Leetcode 6
+
+# def convert( s, numRows):
+#     if numRows==1:
+#         return s
+    
+#     lst=[]
+#     l=len(s)
+#     row=numRows
+#     t=0
+#     while row>0:
+#         if row==1:
+#             dist=numRows+numRows-2
+#         else:
+#             dist=row+row-2
+        
+#         i=t
+#         while i<l:
+#             lst.append(s[i])
+#             i+=dist
+#         row-=1
+#         t+=1
+#     return lst
+
+# print(convert('PAYPALISHIRING', 5))
+
+# # ❌ wrong
+        
+
+
+
+
+
+
+
+# def threeSumClosest(nums, target):
+#     diff = float('inf')
+#     for i in range(len(nums)):
+#         rem=target-nums[i]
+#         has={}
+#         for j in range(i+1, len(nums)):
+#             rem2=rem-nums[j]
+#             if rem2 in has:
+#                 return [ nums[i], nums[j], nums[has[rem2]] ]
+#             has[rem2]=j
+#     return 0
+# print(threeSumClosest([-1,2,1,-4], 1))
+
+
+
+
+
+
+
+
+# leetcode 10
+
+
+# def RegExMAtching(s,p,i,j):
+#     if i >= len(s) and j >= len(p):
+#         return True
+#     if i >= len(s) or j >= len(p):
+#         return False
+#     else:
+#         if p[j] == '.':
+#             return RegExMAtching(s, p, i+1, j+1)
+#         elif p[j] == '*':
+#             if RegExMAtching(s, p, i, j+1):
+#                 return True
+#             if i < len(s) and (s[i] == p[j-1] or p[j-1] == '.'):
+#                 return RegExMAtching(s, p, i+1, j)
+#         elif s[i] == p[j]:
+#             return RegExMAtching(s, p, i+1, j+1)
+
+
+
+
+# def RegExMAtching(s,p,i,j):
+#     if i >= len(s) and j >= len(p):
+#         return True
+#     if i >= len(s) or j >= len(p):
+#         if j+1 == len(p)-1 and p[j+1] == "*":
+#             return True
+#         return False
+#     else:
+#         if j+1 < len(p) and p[j+1] == '*':
+#             res= RegExMAtching(s,p,i,j+2)
+#             if s[i] == p[j] or p[j]==".":
+#                 res |= RegExMAtching(s, p, i+1, j)
+#             return res
+#         else:
+#             if s[i] == p[j] or p[j]=='.':
+#                 return RegExMAtching(s, p, i+1, j+1)
+#             else:
+#                 return False
+        
+        
+        
+# print(RegExMAtching('bc', ".*a*",0,0))
+
+# aabcbcbcaccbcaabc
+# .*a*aa*.*b*.c*.*a*
+
+
+
+
+
+
+
+# def threeSum(nums):
+    # nums.sort()  # Sort the array
+    # res = []
+    # n = len(nums)
+    
+    # for i in range(n - 2):
+    #     # Skip duplicates for the first number
+    #     if i > 0 and nums[i] == nums[i-1]:
+    #         continue
+        
+    #     left, right = i + 1, n - 1
+        
+    #     while left < right:
+    #         total = nums[i] + nums[left] + nums[right]
+            
+    #         if total == 0:
+    #             res.append([nums[i], nums[left], nums[right]])
+                
+    #             # Skip duplicates for the second number
+    #             while left < right and nums[left] == nums[left + 1]:
+    #                 left += 1
+    #             # Skip duplicates for the third number
+    #             while left < right and nums[right] == nums[right - 1]:
+    #                 right -= 1
+                
+    #             left += 1
+    #             right -= 1
+            
+    #         elif total < 0:
+    #             left += 1
+    #         else:
+    #             right -= 1
+    
+    # return res
+
+# nums = [0]*600  # Example with 600 zeros
+# print(threeSum(nums))
+
+
+
+
+
+
+# l1=[1,2,3]
+# l2=[1,4,5]
+# l1=set(l1)
+# l2=set(l2)
+
+# print(l1.intersection(l2)) # [1]
+
+
+
+
+
+
+
+# def threeSumClosest(nums, target):
+#     nums.sort()
+#     closest=float('inf')
+#     for i in range(len(nums)-2):
+#         j=i+1
+#         k=len(nums)-1
+#         while j<k:
+#             s=nums[i]+nums[j]+nums[k]
+#             dist=abs(s-target)
+#             if dist < abs(closest-target):
+#                 closest=s
+#             if target > s:
+#                 j+=1
+#             elif target < s:
+#                 k-=1
+#             elif target==s:
+#                 return s
+#     return closest
+
+# print(threeSumClosest([-1,2,1,-4], 1))
+
+
+
+
+
+
+
+
+# def maxScore(s):
+#     left = s[:1].count('0')
+#     right= s[1:].count('1')
+#     res=left+right
+
+#     for i in range(1,len(s)-1):
+#         if s[i]=='0':
+#             left+=1
+#         elif s[i]=='1':
+#             right-=1
+#         res=max(res,left+right)
+#     return res
+
+# print(maxScore('01001')) # 4
+
+
+
+
+
+
+
+# divide two integer leetcode .
+# def divide( dividend, divisor):
+#     if dividend == divisor:
+#         return 1
+    
+#     sign = True if (dividend < 0 and divisor > 0) or (dividend > 0 and divisor < 0) else False
+
+#     dividend, divisor = abs(dividend), abs(divisor)
+#     ans = 0
+#     while divisor <= dividend:
+#         count = 0
+#         while dividend >= divisor<<count+1:
+#             count += 1
+#         dividend -= divisor<<count
+#         ans += 1<<count
+
+#     return ans*-1 if sign else ans
+
+# print(divide(-2147483648, -1)) # 3
+
+
+
+
+
+
+
+# leetcode 1408
+
+def stringMatching(words):
+    # ans=[]
+    # for i in range(len(words)):
+    #     for j in range(len(words)):
+    #         if i!=j and words[i].find(words[j])!=-1:
+    #             ans.append(words[j])
+    # return list(set(ans))
+
+    # Approach 2:
+    pass
+    
+
+# print(stringMatching(["mass","as","hero","superhero"]))
+
+
+print('av'.startswith('a'))

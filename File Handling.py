@@ -147,3 +147,30 @@
 
 # delete('text.txt','am')
 # print('The string deleted')
+
+
+
+
+s="LeetcodeHelpsMeLearn"
+spaces=[8,13,15]
+
+spaces.sort()
+new_str=[]
+i,j=0,0
+
+while i<len(s):
+    if j>=len(spaces):
+        break
+    if i==spaces[j]:
+        new_str.append(' ')
+        new_str.append(s[i])
+        j+=1
+        i+=1
+        continue
+    new_str.append(s[i])
+    i+=1
+if i<len(s):
+    new_str.append(s[i:])
+
+
+print(''.join(new_str))

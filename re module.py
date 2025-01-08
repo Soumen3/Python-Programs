@@ -2,9 +2,9 @@ import re
 
 # split()          ->  split(pattern,string,maxsplit,flags)
 string='I am a programmer'
-print(re.split('\s+',string))
-print(re.split('\s+',string,2))
-print(re.split('\s+',string,2,2))
+print(re.split(r'\s+',string))
+print(re.split(r'\s+',string,2))
+print(re.split(r'\s+',string,2,2))
 
 
 
